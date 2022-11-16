@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Amplify } from 'aws-amplify';
-import awsmobile from './aws-exports';
+import config from './aws-exports';
 // const { Amplify } = require("aws-amplify");
 
 
 
-Amplify.configure(awsmobile);
+Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
